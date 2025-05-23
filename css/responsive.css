@@ -1,0 +1,71 @@
+/* Mobile View (less than 600px) */
+@media (max-width: 600px) {
+    /* Navigation */
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        background-color: #0a1428;
+        padding: 1rem;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    nav ul li {
+        margin: 0.5rem 0;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    /* Hero Section */
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1.2rem;
+    }
+
+    /* Product Grid */
+    .product-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Champion Grid */
+    .champion-grid {
+        grid-template-columns: 1fr;
+    }
+
+    /* Gallery Grid */
+    .gallery-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+        padding: 1rem;
+    }
+}
+
+/* Tablet View (601px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .product-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .champion-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .gallery-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
